@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="zhy19950705">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="codewars每日一练1"/>
+  <meta property="og:description" content="真真_(:з」∠)_" />
+  <meta property="og:site_name" content="我的前方是星辰大海"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="我的前方是星辰大海" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>我的前方是星辰大海</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">codewars每日一练1</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/zhy19950705">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<1144567324@qq.com>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By zhy19950705</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-03-01</span>
+            <span class="time">03:33:51</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>1、Given a string of words, you need to find the highest scoring word.</p>
+<p>Each letter of a word scores points according to it’s position in the alphabet: a = 1, b = 2, c = 3 etc.</p>
+<p>You need to return the highest scoring word as a string.</p>
+<p>If two words score the same, return the word that appears earliest in the original string.</p>
+<p>All letters will be lowercase and all inputs will be valid.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">const high = s =&gt; &#123;</span><br><span class="line">    let as=s.split(&apos; &apos;).map(s=&gt;[...s].reduce((a,b)=&gt;a+b.charCodeAt(0)-96,0));</span><br><span class="line">    return s.split(&apos; &apos;)[as.indexOf(Math.max(...as))]</span><br><span class="line">&#125;</span><br><span class="line">const high2 = x =&gt; &#123;</span><br><span class="line">    let arr=x.toLowerCase().split(&apos; &apos;);</span><br><span class="line">    let sum=0;</span><br><span class="line">    let holder=0;</span><br><span class="line">    let holder2=0;</span><br><span class="line">    for(let i=0;i&lt;arr.length;i++)&#123;</span><br><span class="line">        for(let j=0;j&lt;arr[i].length;j++)&#123;</span><br><span class="line">            sum+=arr[i].charCodeAt(j)-96;</span><br><span class="line">        &#125;</span><br><span class="line">        if(sum&gt;holder)&#123;</span><br><span class="line">            holder=sum;</span><br><span class="line">            holder2=i;</span><br><span class="line">        &#125;</span><br><span class="line">        sum=0</span><br><span class="line">    &#125;</span><br><span class="line">    return arr[holder2]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2、In this Kata, you will be given a string and your task is to determine if that string can be a palindrome if we rotate one or more characters to the left.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">solve(&quot;4455&quot;) = true, because after 1 rotation, we get &quot;5445&quot; which is a palindrome</span><br><span class="line">solve(&quot;zazcbaabc&quot;) = true, because after 3 rotations, we get &quot;abczazcba&quot;, a palindrome</span><br></pre></td></tr></table></figure>
+<p>More examples in test cases. Input will be strings of lowercase letters or numbers only.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const solve = st =&gt; &#123;</span><br><span class="line">    let t;</span><br><span class="line">    for(let i=1;i&lt;st.length;i++)&#123;</span><br><span class="line">        t=st.slice(i)+st.slice(0,i);</span><br><span class="line">        if(t===[...t].reverse().join(&apos;&apos;)) return true</span><br><span class="line">    &#125;</span><br><span class="line">    return false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、Given three arrays of integers, return the sum of elements that are common in all three arrays.</p>
+<p>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">common([1,2,3],[5,3,2],[7,3,2]) = 5 because 2 &amp; 3 are common in all 3 arrays</span><br><span class="line">common([1,2,2,3],[5,3,2,2],[7,3,2,2]) = 7 because 2,2 &amp; 3 are common in the 3 arrays</span><br></pre></td></tr></table></figure>
+<p>Array lengths in random tests run from 5000 to 10000 elements.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const common = (a,b,c) =&gt; &#123;</span><br><span class="line">    let com=[];</span><br><span class="line">    for(let i=0;i&lt;a.length;i++)&#123;</span><br><span class="line">        let temp=a[i];</span><br><span class="line">        if(b.includes(temp)&amp;&amp;c.includes(temp))&#123;</span><br><span class="line">            b.splice(b.indexOf(temp),1);</span><br><span class="line">            c.splice(c.indexOf(temp),1);</span><br><span class="line">            com.push(temp)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return com.reduce((a,b)=&gt;a+b,0)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4、Leo’s girlfriend asked him to buy a gift list during his next trip, now he wants to know how many of them will he be able to buy.</p>
+<p>Write the following function to help Leo out:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function howManyGifts(maxBudget, gifts)</span><br></pre></td></tr></table></figure>
+<p>The first parameter is Leo’s budget; he second one is an array (a list in Groovy) containing the price of each gift. You should return an integer representing the maximum amount of gifts Leo can buy.</p>
+<p>Example:<br>Maximum budget: 20<br>Gift List: [13, 2, 4, 6, 1]<br>Should return 4.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const howManyGifts = (maxBudget,gifts) =&gt; &#123;</span><br><span class="line">   let i=0;</span><br><span class="line">   gifts=gifts.sort((a,b) =&gt; a-b);</span><br><span class="line">   for(;maxBudget-gifts[i]&gt;=0;i++)&#123;</span><br><span class="line">       maxBudget-=gifts[i]</span><br><span class="line">   &#125;</span><br><span class="line">   return i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5、In this Kata, you will be given a string and your task will be to return a list of ints detailing the count of uppercase letters, lowercase, numbers and special characters, as follows.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">solve(&quot;*&apos;&amp;ABCDabcde12345&quot;) = [4,5,5,3]. </span><br><span class="line">--the order is: uppercase letters, lowercase, numbers and special characters.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const solve = s =&gt; &#123;</span><br><span class="line">    let res=[];</span><br><span class="line">    res.push(s.match(/[A-Z]/g).length);</span><br><span class="line">    res.push(s.match(/[a-z]/g).length);</span><br><span class="line">    res.push(s.match(/\d/g).length)</span><br><span class="line">    res.push(s.match(/\W/g).length)</span><br><span class="line">    return res</span><br><span class="line">&#125;</span><br><span class="line">console.log(solve(&quot;Codewars@codewars123.com&quot;))</span><br></pre></td></tr></table></figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
