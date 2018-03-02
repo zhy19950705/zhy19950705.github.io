@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="codewars," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="真真_(:з」∠)_">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的前方是星辰大海">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1、I have a cat and a dog. I got them at the same time as kitten/puppy. That was humanYears years ago. Return their respective ages now as [humanYears,catYears,dogYears] NOTES:  humanYears &amp;gt;= 1 Cat">
+<meta name="keywords" content="codewars">
+<meta property="og:type" content="article">
+<meta property="og:title" content="codewars每日一练2">
+<meta property="og:url" content="http://yoursite.com/2018/03/02/codewars每日一练2/index.html">
 <meta property="og:site_name" content="我的前方是星辰大海">
-<meta property="og:description" content="真真_(:з」∠)_">
+<meta property="og:description" content="1、I have a cat and a dog. I got them at the same time as kitten/puppy. That was humanYears years ago. Return their respective ages now as [humanYears,catYears,dogYears] NOTES:  humanYears &amp;gt;= 1 Cat">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-02T03:25:29.347Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的前方是星辰大海">
-<meta name="twitter:description" content="真真_(:з」∠)_">
+<meta name="twitter:title" content="codewars每日一练2">
+<meta name="twitter:description" content="1、I have a cat and a dog. I got them at the same time as kitten/puppy. That was humanYears years ago. Return their respective ages now as [humanYears,catYears,dogYears] NOTES:  humanYears &amp;gt;= 1 Cat">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/02/codewars每日一练2/"/>
 
 
 
 
 
-  <title>我的前方是星辰大海</title>
+  <title>codewars每日一练2 | 我的前方是星辰大海</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/zhy19950705"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,9 +282,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -313,9 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/02/codewars每日一练2/" itemprop="url">codewars每日一练2</a></h1>
+          <h1 class="post-title" itemprop="name headline">codewars每日一练2</h1>
         
 
         <div class="post-meta">
@@ -327,7 +326,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-02T11:24:30Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-02T19:24:30+08:00">
                 2018-03-02
               </time>
             
@@ -365,41 +364,58 @@
       
 
       
-        
-          
-          1、I have a cat and a dog.
-I got them at the same time as kitten/puppy. That was humanYears years ago.
-Return their respective ages now as [humanYears,catYears,dogYears]
-NOTES: 
-humanYears &gt;= 1
-Cat Years
+        <p>1、I have a cat and a dog.</p>
+<p>I got them at the same time as kitten/puppy. That was humanYears years ago.</p>
+<p>Return their respective ages now as [humanYears,catYears,dogYears]</p>
+<p>NOTES: </p>
+<p>humanYears &gt;= 1</p>
+<p>Cat Years</p>
+<ul>
+<li>15 cat years for first year</li>
+<li>+9 cat years for second year</li>
+<li>+4 cat years for each year after that</li>
+</ul>
+<p>Dog Years</p>
+<ul>
+<li>15 dog years for first year</li>
+<li>+9 dog years for second year</li>
+<li>+5 dog years for each year after that</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const humanYearsCatYearsDogYears = humanYears =&gt; &#123;</span><br><span class="line">    let res=[];</span><br><span class="line">    if(humanYears===1) return res=[1,15,15];</span><br><span class="line">    else if(humanYears===2) return res=[2,24,24];</span><br><span class="line">    else return res=[humanYears,(humanYears-2)*4+24,(humanYears-2)*5+24]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>2、Welcome. Welcome all to my very second Kata. As you know, the first one was a huge success with an approval rating of 97%. This time, however, things are going to be a little bit different. Is it going to be as cool as the last one? Let’s find out! Tell your friends! </p>
+<p>Given an integer b greater than 0, create and return a b X b matrix with the following pattern:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">                     [x,1]</span><br><span class="line">matrixSquareUp(2) =&gt; [2,1]</span><br><span class="line"></span><br><span class="line">                     [x,x,1]</span><br><span class="line">                     [x,2,1]</span><br><span class="line">matrixSquareUp(3) =&gt; [3,2,1]</span><br><span class="line"></span><br><span class="line">                     [x,x,x,1]</span><br><span class="line">                     [x,x,2,1]</span><br><span class="line">                     [x,3,2,1]</span><br><span class="line">matrixSquareUp(4) =&gt; [4,3,2,1]</span><br></pre></td></tr></table></figure>
+<p>Those are lowercase ‘x’.</p>
+<p>50 &gt; b &gt; 0</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const matrixSquareUp =b =&gt; &#123;</span><br><span class="line">    let res=[];</span><br><span class="line">   for(let i=0;i&lt;b;i++)&#123;</span><br><span class="line">        res[i]=[]</span><br><span class="line">       for(let j=0;j&lt;b;j++)&#123;</span><br><span class="line">           res[i][j]=j&lt;i?&apos;x&apos;:b-j+&apos;&apos;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   return res.reverse()</span><br><span class="line">&#125;;</span><br><span class="line">console.log(matrixSquareUp(6))</span><br></pre></td></tr></table></figure>
+<p>3、Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.<br>For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">persistence(39) === 3 // because 3*9 = 27, 2*7 = 14, 1*4=4</span><br><span class="line">                      // and 4 has only one digit</span><br><span class="line"></span><br><span class="line">persistence(999) === 4 // because 9*9*9 = 729, 7*2*9 = 126,</span><br><span class="line">                       // 1*2*6 = 12, and finally 1*2 = 2</span><br><span class="line"></span><br><span class="line">persistence(4) === 0 // because 4 is already a one-digit number</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const persistence = num =&gt; &#123;</span><br><span class="line">    let times=0;</span><br><span class="line">    num=num.toString();</span><br><span class="line">    while (num.length&gt;1)&#123;</span><br><span class="line">        times++;</span><br><span class="line">        num=num.split(&apos;&apos;).map(Number).reduce((a,b)=&gt;a*b).toString()</span><br><span class="line">    &#125;</span><br><span class="line">    return times</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4、You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.</p>
+<p>For example:</p>
+<p>Let’s say you are given the array {1,2,3,4,3,2,1}:<br>Your function will return the index 3, because at the 3rd position of the array, the sum of left side of the index ({1,2,3}) and the sum of the right side of the index ({3,2,1}) both equal 6.</p>
+<p>Let’s look at another one.<br>You are given the array {1,100,50,-51,1,1}:<br>Your function will return the index 1, because at the 1st position of the array, the sum of left side of the index ({1}) and the sum of the right side of the index ({50,-51,1,1}) both equal 1.</p>
+<p>Last one:<br>You are given the array {20,10,-80,10,10,15,35}<br>At index 0 the left side is {}<br>The right side is {10,-80,10,10,15,35}<br>They both are equal to 0 when added. (Empty arrays are equal to 0 in this problem)<br>Index 0 is the place where the left side and right side are equal.</p>
+<p>Note: Please remember that in most programming/scripting languages the index of an array starts at 0.</p>
+<p>Input:<br>An integer array of length 0 &lt; arr &lt; 1000. The numbers in the array can be any integer positive or negative.</p>
+<p>Output:<br>The lowest index N where the side to the left of N is equal to the side to the right of N. If you do not find an index that fits these rules, then you will return -1.</p>
+<p>Note:<br>If you are given an array with multiple answers, return the lowest correct index.<br>An empty array should be treated like a 0 in this problem.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const findEvenIndex = arr =&gt; &#123;</span><br><span class="line">    for(let i=0;i&lt;arr.length-1;i++)&#123;</span><br><span class="line">        let arr1=arr.slice(0,i);</span><br><span class="line">        let arr2=arr.slice(i+1);</span><br><span class="line">        if(arr1.length===0&amp;&amp;arr2.reduce((a,b)=&gt;a+b)===0) return 0;</span><br><span class="line">        else if(arr1.length!==0&amp;&amp;arr1.reduce((a,b)=&gt;a+b)===arr2.reduce((a,b)=&gt;a+b)) return i;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5、This time no story, no theory. The examples below show you how to write function accum:</p>
+<p>Examples:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">accum(&quot;abcd&quot;);    // &quot;A-Bb-Ccc-Dddd&quot;</span><br><span class="line">accum(&quot;RqaEzty&quot;); // &quot;R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy&quot;</span><br><span class="line">accum(&quot;cwAt&quot;);    // &quot;C-Ww-Aaa-Tttt&quot;</span><br></pre></td></tr></table></figure>
+<p>The parameter of accum is a string which includes only letters from a..z and A..Z.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const accum = s =&gt; &#123;</span><br><span class="line">    return s.split(&apos;&apos;).map((c,i)=&gt;(c.toUpperCase()+c.toLowerCase().repeat(i))).join(&apos;-&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-15 cat years for first year
-+9 cat years for second year
-+4 cat years for each year after that
-
-Dog Years
-
-15 dog years for first year
-+9 dog years for second year
-+5 dog years for each year after that
-
-123456const humanYearsCatYearsDogYears = humanYears =&gt; &#123;    let res=[];    if(huma
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/02/codewars每日一练2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
     
     
 <div>
+      
+        
+
       
 </div>
     
@@ -410,293 +426,46 @@ Dog Years
 
     <div>
       
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
     </div>
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/01/codewars每日一练/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhy19950705">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的前方是星辰大海">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/01/codewars每日一练/" itemprop="url">codewars每日一练1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-01T00:00:00Z">
-                2018-03-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/codewars/" rel="tag"> <i class="fa fa-tag"></i>codewars</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          1、Given a string of words, you need to find the highest scoring word.
-Each letter of a word scores points according to it’s position in the alphabet: a = 1, b = 2, c = 3 etc.
-You need to return the highest scoring word as a string.
-If two words score the same, return the word that appears earliest in the original string.
-All letters will be lowercase and all inputs will be valid.
-123456789101112131415161718192021const high = s =&gt; &#123;    let as=s.split(&apos; &apos;).map(s=&gt;[...s].reduce
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/01/codewars每日一练/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/01/codewars每日一练/" rel="next" title="codewars每日一练1">
+                <i class="fa fa-chevron-left"></i> codewars每日一练1
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-<div>
-      
-</div>
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    <div>
-      
-    </div>
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhy19950705">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我的前方是星辰大海">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/28/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T15:43:41+08:00">
-                2018-02-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More info: Server
-Generate static files1$ hexo generate
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-More info: Deployment
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/28/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-<div>
-      
-</div>
-    
-
-    
-
-    
-
-    <div>
-      
-    </div>
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -706,10 +475,49 @@ More info: Deployment
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -717,6 +525,10 @@ More info: Deployment
 
 
           
+
+  
+
+
 
         </div>
         
@@ -950,6 +762,10 @@ More info: Deployment
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
