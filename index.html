@@ -296,6 +296,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/跨域2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhy19950705">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我的前方是星辰大海">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/05/跨域2/" itemprop="url">'跨域2</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-04T20:02:14Z">
+                2018-03-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          CORS，Cross-origin resource sharing，跨域允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服Ajax只能同源使用的限制
+CORS需要浏览器和服务器同时支持。整个CORS通信过程都由浏览器自动完成，不需要用户参与。对于开发者来说，CORS与同源的AJAX通信没有差别，代码完全一样。浏览器一旦发现AJAX请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。
+实现CORS通信的关键是服务器。只要服务器实现了CORS接口，就可以跨源通信。
+CORS与JSONP的使用目的相同，但是比JSONP更强大。
+JSONP只支持GET请求，CORS支持所有请求所有类型的HTTP请求。JSONP的优势在于支持老式浏览器，以及可以向不正常CORS的网站请求数据
+详细参考：http://www.ruanyifeng.com/blog/2016/04/cors.html
+
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/05/跨域2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+<div>
+      
+</div>
+    
+
+    
+
+    
+
+    <div>
+      
+    </div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/04/codewars每日一练3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -543,7 +702,7 @@
       
         
           
-          CORS，Cross-origin resource sharing，跨域允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服Ajax只能同源使用的限制
+          说到跨域，首先得知道什么是同源
 同源策略同源即协议相同https://，端口相同8080，域名相同 www.zhy19950705.top
 用于保护用户数据安全，防止cookie共享
 如果是非同源的，
@@ -554,7 +713,7 @@ Ajax请求受到限制
 
 cookieCookie是服务器写入浏览器的一小段信息，只有同源的网页才能共享。但是如果两个网页的一级域名相同而二级域名不同的时候，浏览器是允许通过设置document.domain共享Cookie
 12345document.domain=&apos;example.com&apos;document.cookie=&apos;test1=hello&apos;var allCookie=document.cookieSet-Cookie:key=value;domain=.example.com;path=/
-iframe如果两个网页不同源
+iframe如果两个网页不同源，就无法拿到对方的DOM。比如iframe窗口和window.open打开的窗口与父窗口无法通信比如，父窗口运行以下代码，如果iframe窗
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1119,7 +1278,7 @@ More info: Deployment
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
