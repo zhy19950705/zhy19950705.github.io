@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="1、简单模板字符串替换    123456const render = (template,context) =&amp;gt; &amp;#123;  return template.replace(/\&amp;#123;\&amp;#123;(.*?)\&amp;#125;\&amp;#125;/g,(match,key) =&amp;gt; context[key.trim()])&amp;#125;const template = &amp;quot;&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/02/28/hello-world/index.html">
+<meta property="og:title" content="&#39;codewars每日一练4">
+<meta property="og:url" content="http://yoursite.com/2018/03/05/codewars每日一练4/index.html">
 <meta property="og:site_name" content="我的前方是星辰大海">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1、简单模板字符串替换    123456const render = (template,context) =&amp;gt; &amp;#123;  return template.replace(/\&amp;#123;\&amp;#123;(.*?)\&amp;#125;\&amp;#125;/g,(match,key) =&amp;gt; context[key.trim()])&amp;#125;const template = &amp;quot;&amp;#1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-28T07:43:41.874Z">
+<meta property="og:image" content="http://yoursite.com/img/2.jpg">
+<meta property="og:updated_time" content="2018-03-05T08:52:11.636Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="&#39;codewars每日一练4">
+<meta name="twitter:description" content="1、简单模板字符串替换    123456const render = (template,context) =&amp;gt; &amp;#123;  return template.replace(/\&amp;#123;\&amp;#123;(.*?)\&amp;#125;\&amp;#125;/g,(match,key) =&amp;gt; context[key.trim()])&amp;#125;const template = &amp;quot;&amp;#1">
+<meta name="twitter:image" content="http://yoursite.com/img/2.jpg">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/28/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/05/codewars每日一练4/"/>
 
 
 
 
 
-  <title>Hello World | 我的前方是星辰大海</title>
+  <title>'codewars每日一练4 | 我的前方是星辰大海</title>
   
 
 
@@ -296,7 +298,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/codewars每日一练4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhy19950705">
@@ -313,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">'codewars每日一练4</h1>
         
 
         <div class="post-meta">
@@ -325,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T15:43:41+08:00">
-                2018-02-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T22:49:32+08:00">
+                2018-03-05
               </time>
             
 
@@ -335,6 +337,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/codewars/" itemprop="url" rel="index">
+                    <span itemprop="name">codewars</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -363,16 +387,26 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <p>1、简单模板字符串替换<br>  <img src="/img/2.jpg" alt="image"><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const render = (template,context) =&gt; &#123;</span><br><span class="line">  return template.replace(/\&#123;\&#123;(.*?)\&#125;\&#125;/g,(match,key) =&gt; context[key.trim()])</span><br><span class="line">&#125;</span><br><span class="line">const template = &quot;&#123;&#123;name   &#125;&#125;很厉name害，才&#123;&#123;age   &#125;&#125;岁&quot;;</span><br><span class="line">const context = &#123; name: &quot;xhh&quot;, age: &quot;18&quot; &#125;;</span><br><span class="line">console.log(render(template, context));</span><br></pre></td></tr></table></figure></p>
+<p> 2、You are going to be given a word. Your job is to return the middle character of the word. If the word’s length is odd, return the middle character. If the word’s length is even, return the middle 2 characters.<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Kata.getMiddle(&quot;test&quot;) should return &quot;es&quot;</span><br><span class="line"></span><br><span class="line">Kata.getMiddle(&quot;testing&quot;) should return &quot;t&quot;</span><br><span class="line"></span><br><span class="line">Kata.getMiddle(&quot;middle&quot;) should return &quot;dd&quot;</span><br><span class="line"></span><br><span class="line">Kata.getMiddle(&quot;A&quot;) should return &quot;A&quot;</span><br></pre></td></tr></table></figure></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const getMiddle = str =&gt; &#123;</span><br><span class="line">    let arr=str.split(&apos;&apos;);</span><br><span class="line">    let res=[];</span><br><span class="line">    if(arr.length%2===0)&#123;</span><br><span class="line">         res.push(arr[(arr.length/2)-1]);</span><br><span class="line">         res.push(arr[arr.length/2])</span><br><span class="line">    &#125;else res.push(arr[(arr.length-1)/2])</span><br><span class="line">    return res.join(&apos;&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、Some numbers have funny properties. For example:</p>
+<p>  89 –&gt; 8¹ + 9² = 89 * 1</p>
+<p>  695 –&gt; 6² + 9³ + 5⁴= 1390 = 695 * 2</p>
+<p>  46288 –&gt; 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51</p>
+<p>  Given a positive integer n written as abcd… (a, b, c, d… being digits) and a positive integer p we want to find a positive integer k, if it exists, such as the sum of the digits of n taken to the successive powers of p is equal to k * n. In other words:</p>
+<p>  Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + …) = n * k</p>
+<p>  If it is the case we will return k, if not return -1.</p>
+<p>  Note: n, p will always be given as strictly positive integers.<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1</span><br><span class="line">digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k</span><br><span class="line">digPow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2</span><br><span class="line">digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51</span><br></pre></td></tr></table></figure></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const digPow = (n,p) =&gt; &#123;</span><br><span class="line">  let x=String(n).split(&apos;&apos;).reduce((s,d,i)=&gt;s+Math.pow(d,p+i),0)</span><br><span class="line">    return x%n?-1:x/n</span><br><span class="line">&#125;</span><br><span class="line">const digPow2 = (n,p) =&gt; &#123;</span><br><span class="line">  let arr=n.toString().split(&apos;&apos;);</span><br><span class="line">  let sum=0;</span><br><span class="line">    for(let i=0;i&lt;arr.length;i++,p++)&#123;</span><br><span class="line">      sum+=Math.pow(parseInt(arr[i]),p)</span><br><span class="line">    &#125;</span><br><span class="line">    for(let i=1;i*n&lt;=sum;i++)&#123;</span><br><span class="line">     if(i*n===sum) return i</span><br><span class="line">    &#125;</span><br><span class="line">    return -1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 4、Your task is to sort a given string. Each word in the String will contain a single number. This number is the position the word should have in the result.</p>
+<p>   Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).</p>
+<p>   If the input String is empty, return an empty String. The words in the input String will only contain valid consecutive numbers.</p>
+<p>   For an input: “is2 Thi1s T4est 3a” the function should return “Thi1s is2 3a T4est”<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">your_order(&quot;is2 Thi1s T4est 3a&quot;)</span><br><span class="line">[1] &quot;Thi1s is2 3a T4est&quot;</span><br></pre></td></tr></table></figure></p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">const order2 = words =&gt; &#123;</span><br><span class="line">    let arr=words.split(&apos; &apos;);</span><br><span class="line">    let res=[]</span><br><span class="line">    for(let i=0;i&lt;10;i++)&#123;</span><br><span class="line">        for(let j=0;j&lt;arr.length;j++)&#123;</span><br><span class="line">            if(arr[j].indexOf(i)!==-1)&#123;</span><br><span class="line">                res.push(arr[j])</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res.join(&apos; &apos;);</span><br><span class="line">&#125;</span><br><span class="line">console.log(order(&quot;is2 Thi1s T4est 3a&quot;))</span><br><span class="line"></span><br><span class="line">const order = words =&gt; &#123;</span><br><span class="line">   return words.split(&apos; &apos;).sort((a,b)=&gt;&#123;</span><br><span class="line">       return a.match(/\d/)-b.match(/\d/)</span><br><span class="line">   &#125;).join(&apos; &apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5、Write a function that returns the count of characters that have to be removed in order to get a string with no consecutive repeats.</p>
+<p>  Note: This includes any characters<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&apos;abbbbc&apos;  =&gt; &apos;abc&apos;    #  answer: 3</span><br><span class="line">&apos;abbcca&apos;  =&gt; &apos;abc&apos;    #  answer: 2</span><br><span class="line">&apos;ab cca&apos;  =&gt; &apos;ab ca&apos;  #  answer: 1</span><br></pre></td></tr></table></figure></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">const countRepeats = str =&gt; &#123;</span><br><span class="line">    let arr=str.split(&apos;&apos;);</span><br><span class="line">    let count=0</span><br><span class="line">    for(let i=1;i&lt;arr.length;i++)&#123;</span><br><span class="line">        if(arr[i]===arr[i-1]) &#123;</span><br><span class="line">            i--;</span><br><span class="line">            arr.splice(i,1);</span><br><span class="line">            count++</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return count</span><br><span class="line">&#125;</span><br><span class="line">const countRepeat2 = str =&gt; &#123;</span><br><span class="line">    return (str.match(/(.)(?=\1)/g)||[]).length</span><br><span class="line">&#125;</span><br><span class="line">const countRepeat3 = str =&gt; &#123;</span><br><span class="line">    let count=0,last;</span><br><span class="line">    for(let ch of str) ch===last?count++:last=ch;</span><br><span class="line">    return count</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -411,15 +445,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/05/跨域2/" rel="next" title="跨域2">
+                <i class="fa fa-chevron-left"></i> 跨域2
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/01/codewars每日一练/" rel="prev" title="codewars每日一练1">
-                codewars每日一练1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -509,17 +543,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -593,22 +618,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
